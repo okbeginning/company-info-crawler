@@ -1,0 +1,8 @@
+{
+    "version": "1.0.0",
+    "build_date": "2024-02-11",
+    "min_python_version": "3.8.0",
+    "description": "Stock Report Crawler - 股票财务报告下载工具",
+    "author": "Your Name",
+    "license": "MIT"
+}

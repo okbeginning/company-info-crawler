@@ -1,0 +1,50 @@
+# 爬虫设置
+crawler:
+  base_url: "http://www.eastmoney.com"
+  request_timeout: 30
+  max_retries: 3
+  retry_delay: 5
+  rate_limit: 2  # 每秒请求数限制
+
+# 下载设置
+download:
+  default_path: "downloads"
+  chunk_size: 8192
+  verify_hash: true
+  max_concurrent_downloads: 3
+
+# 代理设置
+proxy:
+  enabled: false
+  http: ""
+  https: ""
+  auth:
+    username: ""
+    password: ""
+
+# 日志设置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "stock_crawler.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# GUI设置
+gui:
+  theme: "default"
+  window_size: "800x600"
+  max_history_records: 50
+  auto_check_update: true
+
+# 更新设置
+update:
+  check_interval: 86400  # 24小时
+  repository: "https://api.github.com/repos/user/stock-crawler/releases/latest"
+
+# 数据分析设置
+analysis:
+  enable_visualization: true
+  chart_style: "seaborn"
+  default_chart_size: [10, 6]
+  save_format: "png"
