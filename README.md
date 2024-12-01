@@ -176,3 +176,99 @@ python cli.py -s 平安银行 -y 2023 -t "年度报告" "第一季度报告" -o 
 ### 许可证
 
 MIT License
+
+# Stock Report Crawler (股票报告爬虫)
+
+一个用于下载和管理 A 股上市公司财务报告的爬虫工具。
+
+## 功能特点
+
+- 📊 支持多种报告类型（年报、半年报、季报等）
+- 🔍 智能报告搜索和过滤
+- 📂 自动文件命名和目录管理
+- 📈 实时下载进度显示
+- 🖥️ 用户友好的图形界面
+- 🚀 多线程下载支持
+
+## 安装说明
+
+### 环境要求
+- Python 3.8+
+- pip (Python 包管理器)
+
+### 安装步骤
+
+1. 克隆仓库
+```bash
+git clone https://github.com/YOUR_USERNAME/stock-report-crawler.git
+cd stock-report-crawler
+```
+
+2. 创建虚拟环境（推荐）
+```bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+# 或
+.\venv\Scripts\activate  # Windows
+```
+
+3. 安装依赖
+```bash
+pip install -r requirements.txt
+```
+
+## 使用说明
+
+1. 启动程序
+```bash
+python gui.py
+```
+
+2. 在界面中：
+   - 输入股票代码或选择已有股票
+   - 选择要下载的报告类型
+   - 设置时间范围
+   - 点击"开始爬取"
+
+3. 下载完成后：
+   - 在文件列表中查看和筛选报告
+   - 选择要下载的报告
+   - 点击下载按钮
+   - 可以选择打开下载目录
+
+## 项目结构
+
+```
+stock_crawler/
+├── gui.py              # 图形界面
+├── crawler.py          # 爬虫核心逻辑
+├── stock_codes.json    # 股票代码数据
+├── requirements.txt    # 项目依赖
+└── utils/             # 工具函数
+    ├── __init__.py
+    ├── config_manager.py
+    ├── download_manager.py
+    └── logger.py
+```
+
+## 版本历史
+
+查看 [VERSION_CONTROL_GUIDE.md](VERSION_CONTROL_GUIDE.md) 了解详细的版本历史。
+
+## 贡献指南
+
+欢迎贡献代码！请遵循以下步骤：
+
+1. Fork 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启一个 Pull Request
+
+## 开源协议
+
+本项目采用 MIT 协议 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+## 致谢
+
+感谢所有贡献者对本项目的支持！
