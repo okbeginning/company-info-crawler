@@ -1,4 +1,4 @@
-# 胜宏科技财务报告爬虫
+# 公司信息获取
 
 这是一个用于爬取胜宏科技（股票代码：300476）财务报告的Python爬虫程序。
 
@@ -177,7 +177,7 @@ python cli.py -s 平安银行 -y 2023 -t "年度报告" "第一季度报告" -o 
 
 MIT License
 
-# Stock Report Crawler (股票报告爬虫)
+# 公司信息获取
 
 一个用于下载和管理 A 股上市公司财务报告的爬虫工具。
 
@@ -200,8 +200,8 @@ MIT License
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/YOUR_USERNAME/stock-report-crawler.git
-cd stock-report-crawler
+git clone https://github.com/okbeginning/company-info-crawler.git
+cd company-info-crawler
 ```
 
 2. 创建虚拟环境（推荐）
@@ -239,7 +239,7 @@ python gui.py
 ## 项目结构
 
 ```
-stock_crawler/
+company-info-crawler/
 ├── gui.py              # 图形界面
 ├── crawler.py          # 爬虫核心逻辑
 ├── stock_codes.json    # 股票代码数据
